@@ -1,0 +1,1 @@
+quest:fishingfrenzy;step:0;startTime:2170000;currentStepStartTime:2170000;villager:startvillager,9159525115133400427,-244/87/-396;villager:wife,7426597651865453397,-244/87/-396

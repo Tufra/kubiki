@@ -1,0 +1,9 @@
+player_name=Prate
+donation_mode=false
+culture_reputation=japanese,217
+culture_language=japanese,308
+village_reputations=-244/87/-396,2180
+village_diplomacy=238/70/3259,5
+village_diplomacy=-244/87/-396,5
+village_diplomacy=407/64/5901,5
+village_diplomacy=-893/69/-611,5

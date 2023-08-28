@@ -1,0 +1,9 @@
+Ichihara;-244/87/-396;seiji;japanese;
+Noron-l'océan;-893/69/-611;artisans;norman;
+Chamaizi;-1491/67/-892;tradingvillage;byzantines;
+Olous;-2365/68/-1184;tradingvillage;byzantines;
+Huehuetenango;297/84/528;religious;mayan;
+Gaigwu;238/70/3259;communityvillage;inuits;
+Sainte-Marie-la-fôret;523/77/4639;militaire;norman;
+Bene;472/74/5297;militaryvillage;byzantines;
+Sarserho;407/64/5901;indian_agricole;indian;

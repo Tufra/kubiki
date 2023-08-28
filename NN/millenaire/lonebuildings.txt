@@ -1,0 +1,18 @@
+Lost Maya Corn Farm;312/64/117;lonemayancornfarm;mayan;
+Apomonomeno Boske Probaton;230/66/-177;lonesheepfarm_x;byzantines;
+Tour abandonnée;-493/64/-566;abandonedtower;norman;
+Bûcheron solitaire;-766/64/-1101;lonelumberman;norman;
+Moulin abandonné;-1220/71/-697;abandonedmill;norman;
+Apomonomeno Boske Probaton;-1426/67/-1037;lonesheepfarm_x;byzantines;
+Auberge du Pot de Terre;-1950/77/-1332;loneinn;norman;
+Monachikó próvato;-2655/73/-1052;lonesheepfarm;byzantines;
+Tour des bandits;-3243/62/-873;bandittower;norman;
+Kulavak;-3758/69/-558;bison;inuits;
+Ah Waay Su'uk;-427/78/32;lonemayanshaman;mayan;
+K'as Maya;-782/70/579;mayanbandits;mayan;
+Inuksuit;87/64/2870;inuksuit;inuits;
+Maya Makan;245/70/871;lonemayanfarm;mayan;
+Apomonomeno Boske Probaton;402/68/3432;lonesheepfarm_x;byzantines;
+Auberge Saint Jean;480/69/4034;loneinn;norman;
+Moulin abandonné;519/67/4947;abandonedmill;norman;
+Apomonomeno Boske Probaton;487/65/5469;lonesheepfarm_x;byzantines;

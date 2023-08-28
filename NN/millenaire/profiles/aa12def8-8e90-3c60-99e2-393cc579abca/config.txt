@@ -1,0 +1,6 @@
+player_name=Tufra
+donation_mode=false
+culture_reputation=japanese,-1
+village_reputations=-244/87/-396,-10
+village_diplomacy=-244/87/-396,5
+village_diplomacy=-893/69/-611,5

@@ -1,0 +1,9 @@
+villager:mayan_mayanbanditwarrior
+villager:mayan_lonemayanshaman
+villager:mayan_lonemayanshamanwife
+village:norman_abandonedtower
+village:mayan_lonemayanshaman
+village:mayan_mayanbandits
+building:norman_abandonedtower
+building:mayan_lonemayanshaman
+building:mayan_mayanbandits

@@ -1,0 +1,123 @@
+local robot = require("robot")
+local comp = require("computer")
+local os = require("os")
+
+local size = 9
+
+local direction = {
+    ['forward'] = 0,
+    ['right'] = 1,
+    ['backward'] = 2,
+    ['left'] = 3
+}
+
+local position = {
+    ['x'] = 1,
+    ['y'] = 1,
+    ['direction'] = direction['forward']
+}
+
+local inventorySize = robot.inventorySize()
+
+function harvest()
+
+    print('position (' .. position['x'] .. ';' .. position['y'] .. ')')
+
+    for col = 1, size do
+        for row = 1, size - 1 do
+            robot.useDown()
+            robot.forward()
+            if position['direction'] == direction['forward'] then
+                position['y'] = position['y'] + 1
+            elseif position['direction'] == direction['backward'] then
+              position['y'] = position['y'] - 1
+            end
+            print('position (' .. position['x'] .. ';' .. position['y'] .. ')')
+        end
+
+        if col ~= size then        
+            if col % 2 == 1 then
+                robot.turnRight()
+                robot.forward()
+                robot.useDown()
+                robot.turnRight()
+                position['direction'] = direction['backward']
+                print('position (' .. position['x'] .. ';' .. position['y'] .. ')')
+            else
+                robot.turnLeft()
+                robot.forward()
+                robot.useDown()
+                robot.turnLeft()
+            	position['direction'] = direction['forward']
+            	print('position (' .. position['x'] .. ';' .. position['y'] .. ')')   
+         	end
+            print('current direction ' .. position['direction'])
+            position['x'] = position['x'] + 1
+        end
+    end
+end
+
+function turnTo(directionTo)
+    print('change direction from' .. position['direction'] .. ' to ' .. directionTo)
+
+    if (position['direction'] - directionTo) % 2 == 0 then
+        robot.turnAround()
+        position['direction'] = (position['direction'] + 2) % 4
+    elseif position['direction'] == direction['left'] and directionTo == direction['forward'] then
+        robot.turnRight()
+        position['direction'] = direction['forward']
+    elseif position['direction'] == direction['forward'] and directionTo == direction['left'] then
+        robot.turnLeft()
+        position['direction'] = direction['left']
+    elseif directionTo == position['direction'] + 1 then
+        robot.turnRight()
+        position['direction'] = position['direction'] + 1
+    elseif directionTo == position['direction'] - 1 then
+        robot.turnLeft()
+        position['direction'] = position['direction'] - 1
+    else 
+        print('error: turnTo(' .. directionTo .. ')')
+        returnToBase()
+    end    
+end
+
+function returnToBase()
+    turnTo(direction['left'])
+    while position['x'] > 1 do
+        robot.forward()
+        position['x'] = position['x'] - 1
+        print('position (' .. position['x'] .. ';' .. position['y'] .. ')')
+    end
+    turnTo(direction['backward'])
+    while position['y'] > 1 do
+        robot.forward()
+        position['y'] = position['y'] - 1
+        print('position (' .. position['x'] .. ';' .. position['y'] .. ')')
+    end
+end
+
+function drop()
+    for slot = 1, inventorySize do
+        robot.select(slot)
+        robot.drop()
+    end
+end
+
+function main()
+    local i = 0
+    while true do
+        print('starting loop ' .. i)
+        i = i + 1
+
+        harvest()
+        returnToBase()
+        drop()
+
+        turnTo(direction['forward'])
+
+        print('sleep')
+        os.sleep(300)
+    end
+end
+
+main()
