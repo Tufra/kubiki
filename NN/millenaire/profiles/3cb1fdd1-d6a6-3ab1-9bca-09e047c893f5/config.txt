@@ -1,0 +1,4 @@
+player_name=шишка
+donation_mode=false
+village_diplomacy=-244/87/-396,5
+village_diplomacy=297/84/528,5

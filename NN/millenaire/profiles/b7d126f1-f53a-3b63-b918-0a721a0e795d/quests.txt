@@ -1,3 +1,0 @@
-quest:findtheegg;step:0;startTime:1897000;currentStepStartTime:1897000;villager:startvillager,8173181873033735005,297/84/528
-quest:fishingfrenzy;step:0;startTime:1897000;currentStepStartTime:1897000;villager:startvillager,9159525115133400427,-244/87/-396;villager:wife,7426597651865453397,-244/87/-396
-quest:mayanlumbermanaxe;step:0;startTime:1897000;currentStepStartTime:1897000;villager:startvillager,7549670544461207984,297/84/528

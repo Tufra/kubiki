@@ -1,4 +1,7 @@
 player_name=Tserzh
 donation_mode=false
 village_diplomacy=-244/87/-396,5
+village_diplomacy=813/75/-1756,5
+village_diplomacy=-1491/67/-892,5
+village_diplomacy=-107/70/-996,5
 village_diplomacy=-893/69/-611,5

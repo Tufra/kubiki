@@ -1,0 +1,1 @@
+quest:findtheegg;step:0;startTime:2211000;currentStepStartTime:2211000;villager:startvillager,8173181873033735005,297/84/528
